@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="Prism.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript and HTML Cheatsheet</title>
+</head>
+<body>
+    <nav>
+        <span class="logo"><img src="copy.png" alt=""></span>
+        <div class="content center">
+
+        </div>
+        <div>
+            This javascript cheatsheet is for you!
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>javascript Palindrome Program</b> This is the Palindrome Program in JavaScript                <pre class="language-JS"><code>function isPalindrome(str) {
+                    // Remove non-alphanumeric characters and convert to lowercase
+                    str = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+                
+                    // Compare the original string with its reverse
+                    return str === str.split('').reverse().join('');
+                }
+                
+                // Test the function
+                let inputString = "A man, a plan, a canal, Panama";
+                if (isPalindrome(inputString)) {
+                    console.log(inputString + " is a palindrome.");
+                } else {
+                    console.log(inputString + " is not a palindrome.");
+                }
+                </code></pre>
+            </li>
+            <li><b>JS Prime number Program</b> This is javascript prime program 
+                <pre class="language-Js"><code>function isPrime(num) {
+                    if (num <= 1) {
+                        return false;
+                    }
+                    for (let i = 2; i <= Math.sqrt(num); i++) {
+                        if (num % i === 0) {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                
+                // Test the function
+                let number = 17;
+                if (isPrime(number)) {
+                    console.log(number + ' is a prime number');
+                } else {
+                    console.log(number + ' is not a prime number');
+                }
+                </code></pre>
+            
+            </li>
+            <li><b>HTML Boiler Plate</b> This is HTML Boiler Plate code
+                <pre class="language-HTML"><code>&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+ &ltmeta charset="UTF-8"&gt
+&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+&lttitle&gtDocument&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+                        
+&lt/body&gt
+&lt/html&gt
+                    
+                </code></pre>
+            
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
